@@ -1,0 +1,38 @@
+.movie_container {
+  width: 300px;
+  background-color: #1e2c47;
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+.details {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.details h4 {
+  margin: 0;
+}
+
+.description {
+  position: absolute;
+  background-color: rgb(170, 180, 240);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: rgb(31, 29, 29);
+  transform: translateY(100%);
+  transition: transform 0.3s;
+  padding: 1rem;
+}
+
+.movie_container:hover .description {
+  transform: translateY(0%);
+}
